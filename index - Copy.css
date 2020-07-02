@@ -1,0 +1,35 @@
+body
+{
+	height: 100%;
+}
+
+.parallax
+{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+}
+
+.background
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.content
+{
+	background-color: #0d2245;
+	margin-right: 20%;
+	margin-left: 20%;
+	padding: 20px;
+	transform: translateZ(700px) translateY(-500px) scale(0.3);
+}
+
+h1, h2, h3, h4
+{
+	text-align: center;
+}
