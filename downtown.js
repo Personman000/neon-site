@@ -11,21 +11,38 @@ function movedot(){
 };*/
 
 // Reposition every resize
-window.onload = movedots;
+window.onload = run;
 window.onresize = movedots;
-	
-positions = [1.34];	// Position values for elements (top)
+
+elements = [];	// List of elements to reposition
+positions = [];	// Position values for elements (top)
+
+function run(){
+	// Set elements
+	elements = document.getElementsByClassName("point");	
+	for (let element of elements)
+	{
+		// Get top value from top style value
+		var element_top = element.style.top;
+		element_top = element_top.substring(0, element_top.length-2);
+		element_top = parseFloat(element_top);
+
+		// Set positions
+		positions.push(element_top);						
+	}
+	console.log(positions);
+
+	// Run function
+	movedots()												
+}
 
 function movedots(){
-	var elements = document.getElementsByClassName("point"); // List of elements to reposition
 	console.log(elements);
 	var i = 0;
 	// Take all the listed elements and reposition them according to body height
 	for (let element of elements)
 	{
-		console.log(element.id)
 		element.style.top = (document.body.offsetHeight/positions[i]) + "px";
-		console.log(element);
 		i++;
 	}
 };

@@ -15,10 +15,6 @@ body
 {
 	content: url(Point.png);
 	position: absolute;
-}
-
-#store_point
-{
 	width: 5%;
-	left: 66%;
+	opacity: 0.8;
 }
