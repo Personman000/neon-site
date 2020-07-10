@@ -14,14 +14,18 @@ function movedot(){
 window.onload = movedots;
 window.onresize = movedots;
 
-elements = ["dot"];	// List of elements to reposition
+//elements = ["dot"];	// List of elements to reposition
 positions = [1.35];	// Position values for elements (top)
 
 function movedots(){
+	var elements = document.getElementsByClassName("point");
+	console.log(elements);
+	var i = 0;
 	// Take all the listed elements and reposition them according to body height
-	for (var i = 0; i < elements.length; i++)
+	for (let element of elements)
 	{
-		var element = document.getElementById(elements[0])
-		element.style.top = (document.body.offsetHeight/positions[0]) + "px";
+		element.style.top = (document.body.offsetHeight/positions[i]) + "px";
+		console.log(element);
+		i++;
 	}
 };
