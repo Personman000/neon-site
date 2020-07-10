@@ -7,12 +7,14 @@ body
 
 .background
 {
+	content: url(https://i.imgur.com/QZAj8bz.jpeg);
 	width: 100%;
 }
 
 
 #dot
 {
+	content: url(Point.png);
 	position: absolute;
 	width: 5%;
 	left: 66%;
