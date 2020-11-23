@@ -1,1 +1,1 @@
-https://personman000.github.io/neonblade-site/
+https://personman000.github.io/neon-site/
