@@ -1,0 +1,95 @@
+body
+{
+	height: 100%;
+	text-align: center;
+}
+
+.parallax
+{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+}
+
+.background
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: translateZ(-9999px) scale(20);
+}
+
+.content
+{
+	min-width: 1500px;
+	margin: 0;
+	padding: 0;
+	transform: translateZ(0);
+}
+
+.left_content, .right_content, .center_content, .center_in, .center_out, .fill_content
+{
+	background-size: 100%;
+	min-height: 1000px;
+	text-align: left;
+}
+
+.left_content, .right_content
+{
+	padding-top: 25%;
+	padding-bottom: 0px;
+	background-repeat: no-repeat;
+}
+
+.left_content
+{
+	background-image: url("BackgroundL.png");
+	padding-left: 100px;
+	padding-right: 60%;
+}
+
+.right_content
+{
+	background-image: url("BackgroundR.png");
+	padding-left: 60%;
+	padding-right: 100px;
+}
+
+.fill_content
+{
+	background-color: #0d2245;
+	height: 100%;
+}
+
+.center_content, .center_in, .center_out
+{
+	padding-top: 1px;
+	padding-bottom: 10px;
+}
+
+.center_content
+{
+	background-image: url("BackgroundC.png");
+	padding-left: 30%;
+	padding-right: 30%;
+	background-repeat: repeat-y;
+}
+
+.center_in
+{
+	background-image: url("BackgroundCTransition.png");
+}
+
+.center_out
+{
+	background-image: url("BackgroundCTransition.png");
+	transform: rotate(180deg);
+}
+
+h1, h2, h3, h4
+{
+	text-align: center;
+}
