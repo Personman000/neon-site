@@ -24,13 +24,13 @@ body
 
 .content
 {
-	min-width: 900px;
+	min-width: 1500px;
 	margin: 0;
 	padding: 0;
 	transform: translateZ(0);
 }
 
-.left_content, .right_content, .center_content, .center_in, .center_out
+.left_content, .right_content, .center_content, .center_in, .center_out, .fill_content
 {
 	background-size: 100%;
 	min-height: 1000px;
@@ -40,7 +40,7 @@ body
 .left_content, .right_content
 {
 	padding-top: 25%;
-	padding-bottom: 15%;
+	padding-bottom: 0px;
 	background-repeat: no-repeat;
 }
 
@@ -58,6 +58,11 @@ body
 	padding-right: 100px;
 }
 
+.fill_content
+{
+	background-color: #0d2245;
+	height: 100%;
+}
 
 .center_content, .center_in, .center_out
 {
