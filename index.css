@@ -34,12 +34,13 @@ body
 {
 	background-size: 100%;
 	min-height: 1000px;
+	text-align: left;
 }
 
 .left_content, .right_content
 {
-	padding-top: 40%;
-	padding-bottom: 0%;
+	padding-top: 25%;
+	padding-bottom: 15%;
 	background-repeat: no-repeat;
 }
 
