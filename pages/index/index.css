@@ -38,8 +38,7 @@ body
 
 .content
 {
-	min-width: 1500px;
-	max-width: 1600px;
+	min-width: 922px;
     margin-left: auto;
     margin-right: auto;
 	padding: 0;
@@ -57,19 +56,21 @@ body
 {
 	padding-top: 25%;
 	padding-bottom: 0px;
+	background-size: 130% 100%;
 	background-repeat: no-repeat;
 }
 
 .left_content
 {
-	background-image: url("../../images/BackgroundL.png");
+	background-image: url("../../images/BackgroundLExtended.png");
 	padding-left: 100px;
 	padding-right: 60%;
 }
 
 .right_content
 {
-	background-image: url("../../images/BackgroundR.png");
+	background-image: url("../../images/BackgroundRExtended.png");
+	background-position: right top;
 	padding-left: 60%;
 	padding-right: 100px;
 }
