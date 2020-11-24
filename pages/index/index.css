@@ -127,11 +127,13 @@ body
 
 .center_in
 {
+	background-position: bottom;
 	background-image: url("../../images/BackgroundCTransition.png");
 }
 
 .center_out
 {
+	background-position: bottom;
 	background-image: url("../../images/BackgroundCTransition.png");
 	transform: rotate(180deg);
 }
